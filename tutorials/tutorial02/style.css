@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', Courier, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: #A45A42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a, .navbar strong {
+    margin-right: 15px;
+}
+
+.photo-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.photo-section img {
+    width: 43%;
+    margin-right: 3%;
+}
+
+main {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
