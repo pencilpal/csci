@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif
+
 }
 header {
     background-color: #758432;
@@ -11,6 +12,16 @@ header {
 section {
     border-width: 1px;
     border-style: solid;
+    border-color: black;
     display: inline-block;
     margin: 100px;
+}
+
+* {
+    color:hotpink
+    
+}
+
+p {
+    font-weight:bold
 }
