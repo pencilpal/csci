@@ -1,0 +1,27 @@
+body {
+    background-color:#b4cded;
+    text-align:center;
+    font-family:Impact;
+}
+
+nav{
+    text-align: center;
+    margin:auto;
+    background-color:black;
+    a:link{
+        color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    font-weight:bold;
+    
+    }
+}
+
+img{display: inline-block;
+    margin: 50px;
+}
+
+footer{
+    background-color:#344966;
+    color:white;
+}
