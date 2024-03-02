@@ -5,8 +5,50 @@ body {
 }
 
 .grid-container {
+    display:grid;
     height: 100vh;
-    /* you will add addition rules for the container here  */
+    grid-template-columns: 20% 20% 20%20% 20%;
+    grid-template-rows: 20% 20% 20%20% 20%;
+    text-align: center;
+
 }
 
-/* create your child rules here:  */
+.item-1{
+    border: 5px solid black;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    background-color: white;
+}
+
+.item-2{
+    border: 5px solid black;
+    grid-row-start: 2;
+ grid-column-start: 3;
+    grid-column-end: span 5;
+    background-color: white;
+   }
+
+.item-3{
+ border: 5px solid black;
+ grid-row-start: 3;
+ grid-column-start: 1;
+    grid-column-end: span 3;
+    background-color: white;
+}
+
+.item-4{
+    border: 5px solid black;
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-column-end: span 5;
+    background-color: white;
+   }
+
+.item-5{
+ border: 5px solid black;
+ grid-row-start: 5;
+ grid-column-start: 1;
+    grid-column-end: span 3;
+    background-color: white;
+}
+
