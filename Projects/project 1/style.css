@@ -1,0 +1,103 @@
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: 100%;
+    list-style-type: none;
+    
+}
+
+.container>div {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    
+}
+
+header {
+    padding: 25px 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+    border-radius: 3px;
+    
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: repeat(10% 10);
+    padding:50px;
+    gap:50px;
+    
+}
+
+.main{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: span 8;
+}
+
+.about{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    
+}
+
+.photos{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 7;
+
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 9;
+}
+
+
+@media (max-width: 720px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 12);
+    }
+
+    .main{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 4;
+    }
+    
+    .about{
+        grid-column: 1 / span 1;
+       grid-row: 1 / span 2;
+        
+    }
+    
+    .photos{
+        grid-column: 1 / span 1;
+        grid-row: 7 / span 5;
+    
+    }
+    
+    .footer{
+        grid-column: 1 / span 1;
+        grid-row: 12;
+    }
+}
+
+
+
+/* sources: https://sentry.io/answers/i-need-an-unordered-list-without-any-bullets-html-css/
+https://developer.mozilla.org/en-US/docs/Web/CSS/gap
+https://stackoverflow.com/questions/51865914/padding-to-css-grid
+https://www.shecodes.io/athena/40195-how-to-add-spacing-around-text-inside-a-css-grid-box
+*/
