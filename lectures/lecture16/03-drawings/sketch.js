@@ -2,7 +2,7 @@ function setup() {
     const canvasWidth = window.innerWidth;
     const canvasHeight = window.innerHeight; 
     createCanvas(canvasWidth, canvasHeight);
-    background("pink");
+    background("lightblue");
 
     /* Use the drawing functions to draw a picture. Ideas:
         * Draw an animal
@@ -12,12 +12,12 @@ function setup() {
     */
 
     // https://p5js.org/reference/#/p5/circle
-    fill("teal")
-    circle(550, 100, 100);
+    fill("yellow")
+    circle(800, 400, 700);
 
-    // https://p5js.org/reference/#/p5/rect
-    fill('hotpink')
-    rect(30, 20, 55, 55);
+ // Polygon: https://p5js.org/reference/#/p5/beginShape
+ fill("brown")
+ 
 
     // add your drawing here:
     // https://p5js.org/reference/#/p5/point
