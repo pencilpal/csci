@@ -18,8 +18,8 @@ let idx = 0;
     (2) update the caption inside of the .caption paragraph
 */
 function showImage() {
-    console.log('Show image:', idx);
-    const img = document.querySelector ("the_image");
+    console.log("Show image:", idx);
+    const img = document.querySelector ("#the_image");
     img.src = photos[idx]; //this is called indexing an array btw
 }
 
@@ -43,6 +43,6 @@ function forward() {
    one less than the length of the array.
 */
 function back() {
-    idx -+1;
+    idx -=1;
     showImage();
 }
