@@ -1,10 +1,11 @@
 const containerEl = document.querySelector("#output_container");
 
 async function showSong() {
-    const searchTerm = "Ben Folds";
+    const searchTerm = document.querySelector "term";
     const url = `https://www.apitutor.org/spotify/simple/one/v1/search?q=${searchTerm}&type=track`;
     const response = await fetch(url);
     const song = await response.json();
+
     console.log(song);
 
     // your code goes here. Figure out how to output something like this to the screen,
