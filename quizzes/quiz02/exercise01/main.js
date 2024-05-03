@@ -4,10 +4,10 @@ function changeBackground() {
 }
 
 function goodbye() {
-    
+    document.querySelector("#message").innerHTML = "goodbye";
 }
 
 function showDog() {
    console.log('show dog');
-   document.querySelector("img").src = "dog.jpg"
+   document.querySelector("img").src = "images/dog.jpg"
 }
