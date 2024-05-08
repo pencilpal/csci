@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="main.js" defer></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox The Ghost Heardle</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <div id="theme-bg">
+        <div id="popup-theme" title="Close">
+            <p> You found my secret! What's your favorite album?</p>
+            <img src="./assets/llalg.jpg" onclick="changeTheme('letlive')">
+            <img src="./assets/euts.jpg" onclick="changeTheme('euts')">
+            <img src="./assets/st.jpg" onclick="changeTheme('st')">
+            <img src="./assets/jtg.jpg" onclick="changeTheme('selftitled')">
+            <img src="./assets/ottr.jpg" onclick="changeTheme('ottr')">
+            <img src="./assets/cheers.jpg" onclick="changeTheme('cheers')">
+
+            <div id="close-popup" onclick="closePopupMenu()">
+                <p> X </p>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <header>
+        <div> <img src="./assets/ghostie.png" onclick="openPopupMenu()">
+            </a> </div>
+
+        <nav>
+            <a href="./about.html"> Info </a>
+            <a href="./list.html"> Song List</a>
+        </nav>
+
+    </header>
+
+
+    <main class="landing">
+        <div id="guesses">
+            <section>
+                <div id="main-box" class="box">
+                    <h1>
+
+                        <div class="audio"> <audio src="./assets/MILLIN_DOLALR_BILSL.mp3" type="audio/mp3"> </div>
+                        <button onclick="playSong()"> play </button>
+
+                        <div class="search"> <input id="guess" type="text" placeholder="Make a guess!"> </div>
+                        <button onclick="checkGuess()"> submit </button>
+                       <div id="skip"> <button onclick="skipGuess()"> skip </button> </div>
+
+                        <div id="p1">
+                            <p> </p>
+                        </div>
+                        <div id="p2">
+                            <p> </p>
+                        </div>
+                        <div id="p3">
+                            <p> </p>
+                        </div>
+                        <div id="p4">
+                            <p> </p>
+                        </div>
+                        <div id="p5">
+                            <p> </p>
+                        </div>
+
+
+
+                    </h1>
+                </div>
+
+            </section>
+        </div>
+
+
+
+        <div id="winner" class="hide">
+
+            <div class="audio"> <audio src="./assets/MILLIN_DOLALR_BILSL.mp3" type="audio/mp3"> </div>
+            <p> Congratulations! You win!</p>
+
+        </div>
+
+        <div id="loser" class="hide">
+
+            <div class="audio"> <audio src="./assets/MILLIN_DOLALR_BILSL.mp3" type="audio/mp3"> </div>
+            <p> Sorry.... You lose.......</p>
+
+        </div>
+        <div id="loser" class="show">
+
+            <div class="audio"> <audio src="./assets/MILLIN_DOLALR_BILSL.mp3" type="audio/mp3"> </div>
+            <p> Sorry.... You lose.......</p>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Site created by Carol </p>
+    </footer>
+
+</body>
+
+</html>

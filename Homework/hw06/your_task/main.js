@@ -32,8 +32,25 @@ async function getArtist (term) {
     const request = await fetch(url);
     const data = await request.json();
     console.log(data);
+    console.log(data[0].name);
+    console.log(data[0].image_url);
+    console.log(data[0].spotify_url);
 
-    const snippit = ``
+const snippet = ` <section class="artist-card" id="3Nrfpe0tUJi4K4DXYWgMUX">
+<div>
+    <img src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa">
+    <h2>BTS</h2>
+    <div class="footer">
+        <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
+            view on spotify
+        </a>
+    </div>
+</div>
+</section>`;
+
+const container = document.querySelector('#artist');
+container.innerHTML = snippet;
+
 };
 
 

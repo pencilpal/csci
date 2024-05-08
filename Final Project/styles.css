@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: Asap;
+}
+
+body {
+  color: #0e103c;
+  margin: 0;
+  background-color: #5958a2;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+#winner {
+  display: none;
+}
+
+#loser {
+  display: none;
+}
+
+header {
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+}
+
+header img {
+  width: 90px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav>a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+
+main {
+  padding: 100px 25vw 50px 25vw;
+  min-height: 70vh;
+}
+
+.landing {
+  background: white;
+  padding: 50px 15vw 100px 15vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* actual game stuff */
+
+  #main-box {
+    padding: 30vh 40vh;
+    border: 4px solid black;
+    border-radius: 10px;
+  }
+
+  input[type="text"] {
+    width: 500px;
+    height: 35px;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  #p1,
+  #p2,
+  #p3,
+  #p4,
+  #p5 {
+    border: 2px solid black;
+    text-align: center;
+    height: 30px;
+    margin: 10px;
+  }
+
+  #audio {
+    display: block;
+    align-items: center;
+  }
+
+  footer {
+    padding: 50px;
+    text-align: center;
+  }
+
+.hide {
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+
+
+
+/* here's my themes */
+
+/* let live and let ghosts */
+
+.letlive header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+/* below is how i change the body color */
+.letlive {
+  background-color: green;
+}
+
+.letlive button,
+.letlive .content {
+  color: #434a6c;
+}
+
+.letlive body {
+  background-color: #c27f14;
+}
+
+.letlive #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: rgb(218, 167, 56);
+}
+
+.letlive .landing {
+  background-image: url("./assets/llalg-background\ TEMP.jpg");
+  background-size: cover;
+}
+
+/* everything under the sun */
+.euts header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.euts button,
+.euts .content {
+  color: #434a6c;
+}
+
+.euts body {
+  background-color: #c27f14;
+}
+
+.euts #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: rgb(158, 192, 84);
+}
+
+.euts .landing {
+  background-image: url("./assets/euts-background.jpg");
+  background-size: cover;
+}
+
+/* safe travels */
+.st header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.st button,
+.st .content {
+  color: #434a6c;
+}
+
+.st body {
+  background-color: #c27f14;
+}
+
+.st #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: rgb(165, 180, 214);
+}
+
+.st .landing {
+  background-image: url("./assets/safetravels-bg.jpg");
+  background-size: cover;
+}
+
+/* self titled */
+.selftitled header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.selftitled button,
+.selftitled .content {
+  color: #434a6c;
+}
+
+.selftitled body {
+  background-color: #c27f14;
+}
+
+.selftitled #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+.selftitled .landing {
+  background-image: url("./assets/selftitled-bg.jpg");
+  background-size: cover;
+}
+
+/* off to the races */
+.ottr header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.ottr button,
+.ottr .content {
+  color: #434a6c;
+}
+
+.ottr body {
+  background-color: #c27f14;
+}
+
+.ottr #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.ottr .landing {
+  background-image: url("./assets/ottr-bg.jpg");
+  background-size: cover;
+}
+
+/* cheers */
+.cheers header {
+  background: #c27f14;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.cheers button,
+.cheers .content {
+  color: #434a6c;
+}
+
+.cheers body {
+  background-color: #c27f14;
+}
+
+.cheers #main-box {
+  padding: 30vh 40vh;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.cheers .landing {
+  background-image: url("./assets/cheers-bg.jpg");
+  background-size: cover;
+}
+
+/* here's my theme switcher, I followed this tutorial to set it up: https://www.youtube.com/watch?v=7dq_hDsHbkM */
+
+#theme-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#popup-theme {
+  position: fixed;
+  width: 1000px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+  left: 50%;
+  margin-left: -500px;
+  top: 50%;
+  margin-top: -250px;
+}
+
+#popup-theme img {
+  padding: 10px;
+  width: 14%;
+  padding-top: 30px;
+}
+
+#close-popup {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+  text-align: center;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#close-popup p {
+  margin-top: 0;
+  font-weight: bold;
+}
